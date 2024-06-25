@@ -1,0 +1,130 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body
+{
+     background-image: url(./images/back2.jpg);
+    background-position: center;
+    background-size:  cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    overflow: hidden; 
+    position: relative;
+    
+    
+}
+
+.wrapper
+{
+
+   
+    width: 80%;
+    margin : 0  auto;
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    background-image: url(./images/back2.jpg);
+    background-position: center;
+    background-size:  cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    overflow: hidden; 
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 10px 10px 9px;
+  
+
+
+   
+    
+    
+}
+
+.box
+{
+    position: absolute;
+    width: 40em;
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    top: 7.5em;
+    left: 18em; 
+    justify-content: center;
+    align-items: center;
+     /* border: 1em solid #000; */
+   
+
+    /* border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-left: 0;
+    border-right: 0;
+    backface-visibility: hidden; */
+    
+    box-shadow: 10px 10px 9px;
+    border-radius: 50px;
+
+
+    /* border-top-color: rgb(136, 245, 163);
+    border-bottom-color: rgb(97, 204, 113); */
+    
+ 
+    background-image: url(./images/back2.jpg);
+    background-position: center;
+    background-size:  cover;
+    /* height: 100vh; */
+    background-repeat: no-repeat;
+    overflow: hidden; 
+    position: relative;
+   
+}
+
+input[type=text]
+{
+    margin-top: 10px;
+    /* padding: 10px; */
+    width: 20em;
+    height: 2.5em;
+    border: none;
+      padding-left: 15px;
+    font-weight: bold;
+    background-image: linear-gradient(90deg ,#a8ff78,#a8c0ff);
+}
+
+input[type=button]
+{
+    margin-top: 10px;
+    /* padding: 10px; */
+    width: 20em;
+    background-image: linear-gradient(90deg ,#3f2b96,#a8c0ff);
+    height: 2.5em;
+    border: none;
+    
+    font-weight: bold;
+    
+}
+
+td
+{
+    padding: 8px;
+    font-size: 1.9em;
+    font-weight: bolder;
+    
+}
+
+select
+{
+    width: 20em;
+    height: 2.5em;
+    margin: 10px  0;
+    background-image: linear-gradient(90deg ,#A1FFCE,#FAFFD1);
+    border: none;
+    font-weight: bold;
+
+}

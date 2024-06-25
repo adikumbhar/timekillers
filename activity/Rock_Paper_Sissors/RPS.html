@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROCK_PAPER_SISSORS</title>
+    <link rel="stylesheet" href="RPS.css" />
+    <!-- <link rel="shortcut icon" href="#"> -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>ROCK PAPER SISSOR</h1>
+      <div class="wrapper">
+        <div class="rules">
+          <h3>Basic Rules :</h3>
+          <br />
+          <p id="para">
+            * Rock beats scissors <br />
+            * Scissors cut paper <br />
+            * Paper covers rock <br /><br />
+          </p>
+
+          <h3>Instructions :</h3>
+          <br />
+          <p id="para">
+            * First select your move <br />
+            * Computer will select its move next <br />
+            * Result is Displayed <br />
+            * Counter of Winnings will Increase<br /><br />
+          </p>
+
+          <h3>Winning Conditions :</h3>
+          <br />
+          <p id="para">
+            * Rock beats scissors <br />
+            * Scissors beat paper <br />
+            * Paper beats rock <br />
+          </p>
+        </div>
+
+        <div class="choices">
+          <div class="ch">
+            <div id="rock" class="choice">
+              <img src="./images/rock.png" alt="" />
+            </div>
+            <div id="paper" class="choice">
+              <img src="./images/paper.png" alt="" />
+            </div>
+            <div id="sissor" class="choice">
+              <img src="./images/sissors.png" alt="" />
+            </div>
+          </div>
+          <div class="score-board">
+            <div class="score">
+              <p id="user-score">0</p>
+              <p>USER</p>
+            </div>
+
+            <div class="score">
+              <p id="comp-score">0</p>
+              <p>COMPUTER</p>
+            </div>
+          </div>
+
+          <div class="msg-container">
+            <p id="msg">Play youe move</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="RPS.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+    <link rel="stylesheet" href="snake.css" />
+  </head>
+  <body>
+    <div class="main2">
+      <div class="rules">
+        <h1>Rules:</h1>
+
+        
+          
+        <p id="para"> <br>    1. Start game using Arrow buttons </p>
+        <p id="para"> <br>    2. Initially the length of snake is one block and occur at rondom position.</p>
+        <p id="para"> <br>    3. Length of snake incerases as it consumes food and food occur at rondom position. </p>
+        <p id="para"> <br>    4. Try to avoid walls ,if snake crashes with walls then game over... </p>
+        <p id="para"> <br>    5. Don't forget to enjoy... </p>
+       
+      </div>
+
+      <div class="container2">
+        
+        <div class="wrapper">
+            <div class="game-details">
+              <span class="score">Score: 0</span>
+              <span class="high-score">High Score: 0</span>
+            </div>
+            <div class="play-board"></div>
+            <div class="controls">
+              <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i>
+              <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i>
+              <i data-key="ArrowRight" class="fa-solid fa-arrow-right-long"></i>
+              <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <script src="snake.js"></script>
+  </body>
+</html>

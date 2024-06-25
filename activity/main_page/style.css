@@ -1,0 +1,180 @@
+* {
+  margin: 0; /* to use user defined padding and margins*/
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex; /*applying flex property to get responsiveness*/
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* background: #151F28 ; */
+  background-image: url(./time2.jpg);
+  border: 10px solid #304060;
+  border-radius: 30px;
+}
+.container {
+  display: flex;
+  position: absolute;
+  left: 480px;
+  top: 150px;
+
+  flex-basis: 50%;
+}
+
+.container h1 {
+  font-size: 100px;
+  color: #b6fbff;
+  /* box-shadow: 0 0 10px #04fc43 ; */
+  padding: 30px;
+  border-radius: 30px;
+}
+
+/* .container h1:hover
+{
+    font-size: 110px;
+    color: #313030;
+    margin-left: 20px;
+    /* box-shadow: 0 0 10px #fe00f1 ; 
+  padding: 20px;
+  border-radius: 30px;
+} */
+
+.wrapper {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+  position: absolute;
+  left: 450px;
+  background: black;
+  border-radius: 30px;
+}
+.menu {
+  position: absolute;
+  width: 260px;
+  left: 30em;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu li {
+  position: absolute;
+  left: 50px; /* 1 */
+  list-style: none;
+  transform-origin: 180px;
+  transition: 0.5s;
+
+  transition-delay: calc(0.1s * var(--i));
+  transform: rotate(0deg) translateX(180px);
+}
+
+.menu.active li {
+  transform: rotate(calc(360deg / 8 * var(--i)));
+}
+
+.menu li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0px;
+  height: 60px;
+  font-size: 2em; /* font of the icons */
+  border-radius: 50%;
+  transform: rotate(calc(360deg / -8 * var(--i)));
+  color: transparent;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+.menu.active li a {
+  color: var(--clr); /* to specify the color of icons after clicking on + sign*/
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.menu li a::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--clr);
+  transform: rotate(calc(var(--i) * 90deg)) translate(0, 45px);
+  transition: height 0.5s, width 0.5s, transform 0.5s;
+  transition-delay: 0s, 0s, 0s;
+}
+
+.menu.active li a::before {
+  /* css after clicking on the + sign */
+  width: 80px; /* this decides the height and width of the box that forms on the element/icons*/
+  height: 80px;
+  border: 2px solid var(--clr);
+  box-sizing: border-box;
+  background: #151f28;
+  z-index: -1;
+  transform: rotate(calc(var(--i) * 90deg)) translate(0px, 0px); /* to decide alignment of the box around the element */
+  transition: transform 0.5s, height 0.5s, width 0.5s;
+  transition-delay: 1s, 1.5s, 1.5s;
+  rotate: 135deg; /* rotate the box into specific adjustable value */
+}
+
+.menu.active li:hover a::before    /* it is used to give hover effct to elements */ {
+  background: var(--clr);
+  color: #151f28;
+  box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr), 0 0 50px var(--clr);
+}
+
+.menu li a::after {
+  content: "";
+  position: absolute;
+  left: 50px; /* it is used to decide the distance of the sticks that throwed after clicking on + sign*/
+  width: 50px; /* it decide the distance or height of the pointing stick */
+  height: 2px; /*  it decides the width of the pointing sticks*/
+  background: var(--clr);
+  z-index: -2;
+  transform: rotate(calc(var(--i) * 0deg)) translate(15px, 0px); /* it is used to align the sticks at specific position*/
+  transition: 0.5s;
+
+  transition-delay: 0.5s;
+}
+
+.menu.active li a::after {
+  left: -40px;
+  width: 80px;
+
+  transform: rotate(calc(var(--i) * 45deg)) translate(50px, 0px);
+  transition-delay: 0.5s;
+}
+
+.menu.active li:hover a p     /* to make icons visible after the hover effect */ {
+  position: relative;
+  color: #2f363e;
+  font-weight: bold;
+  z-index: 100;
+}
+
+.menuToggle       /* css on the + sign */ {
+  position: absolute;
+  left: 180px;
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 3em; /* size of the + button */
+  transition: transform 1.5s;
+}
+
+.menu.active .menuToggle  /* this css is used to rotate the plus button in the centre */ {
+  transform: rotate(315deg);
+}

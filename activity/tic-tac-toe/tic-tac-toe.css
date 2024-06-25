@@ -1,0 +1,143 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main2
+{
+    width:100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.rules
+{
+    width: 30%;
+    height: 100vh;
+    /* background-color: brown; */
+    background-image: url(/Rules.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid #000;
+}
+
+
+.rules h1 {
+  font-size: 5em;
+  padding: 15px 0px;
+  margin-left: 20px;
+  font-weight: bolder;
+  color: #fff;
+}
+
+#para {
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  word-spacing: 2px;
+  text-align: justify;
+  /* padding-top: 20px; */
+  padding: 12px;
+  color: #fff;
+  
+}
+
+
+
+.container2
+{
+    width: 70%;
+    height: 100vh;
+    /* background-color: #37505C; */
+    background-image: url(./ticback.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid #000;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+  
+  body {
+    background-color: #548687;
+    text-align: center;
+  }
+  
+  .container {
+    height: 70vh;
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+  }
+  
+  .box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    margin-top: -40px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(10px);
+  }
+  
+  #reset-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    margin-top: -40px;
+  }
+  
+  #new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+  }
+  
+  #msg {
+    color: red;
+    font-size: 1.5rem;
+  }
+  
+  .msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0rem;
+    margin-top: 20px;
+  }
+  
+  .hide {
+    display: none;
+  }
+  

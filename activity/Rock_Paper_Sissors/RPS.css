@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  border: 5px solid #000;
+}
+
+.container h1 {
+  font-size: 50px;
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #081b31;
+  color: #fff;
+}
+
+.wrapper {
+  width: 100%;
+  height: 93vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.rules {
+  width: 30%;
+  height: 93vh;
+  /* background-color: brown; */
+  background-image: url(/Rules.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.rules h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  padding-left: 30px;
+  color: white;
+}
+
+/* .rules p {
+  font-size: 25px;
+
+  padding: 10px;
+  padding-left: 60px;
+} */
+
+#para {
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  word-spacing: 2px;
+  text-align: justify;
+  /* padding-top: 20px; */
+  padding-left: 20px;
+  color: #fff;
+}
+
+.choices {
+  width: 70%;
+  height: 93vh;
+  /* background-color: aqua; */
+  background-image: url(./images/back2.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center;  */
+
+  gap: 3rem;
+}
+
+.ch {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  margin-top: 80px;
+}
+
+.choice {
+  height: 160px;
+  width: 160px;
+  background-color: red;
+  border-radius: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
+
+.choice :hover {
+  cursor: pointer;
+  background-color: green;
+  height: 180px;
+  width: 180px;
+  border-radius: 30%;
+}
+
+.choice img {
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+  /* border-radius: 70%; */
+}
+
+.score-board {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  /* margin-top: 100px; */
+  /* position: absolute; */
+}
+
+.score-board p {
+  font-size: 50px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+}
+
+#user-score {
+  font-size: 100px;
+  color: #fff;
+}
+
+#comp-score {
+  font-size: 100px;
+  color: #fff;
+}
+
+#msg {
+  display: flex;
+  flex-direction: row;
+  font-size: 40px;
+  background-color: #081b31;
+  /* backdrop-filter: blur(30%); */
+  color: #fff;
+  padding: 15px;
+  border-radius: 20px;
+}

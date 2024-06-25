@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GUESS_THE_NUMBER</title>
+    <link rel="stylesheet" href="GTN.css" />
+  </head>
+  <body >
+    <div class="main2">
+      <div class="rules">
+        <h1>Rules:</h1>
+
+        
+          
+        <p id="para"> <br>    1. A random Number is generated Randomly. </p>
+        <p id="para"> <br>    2. The number is not known to user you have to guess that number. </p>
+        <p id="para"> <br>    3. The player can have multiple attempts and also hints are given to guess number right. </p>
+        <p id="para"> <br>    4. If the player guesses the Number correctly, he will win the game. </p>
+        <p id="para"> <br>    5. count your attempts, try to do better and enjoy... </p>
+       
+      </div>
+
+      <div class="container2">
+        <div class="container">
+
+            <div>
+                <h1>Number Guessing Game</h1>
+                <p>Guess the number between 1 and 100</p>
+                <input type="number" id="guess" min="1" max="100" oninput="disable();" />
+
+                <button id="submit">Submit</button>
+                <p id="hint"></p>
+                <p id="attempts"></p>
+              </div>
+        
+        </div>
+      </div>
+    </div>
+
+    <script src="GTN.js"></script>
+  </body>
+</html>
